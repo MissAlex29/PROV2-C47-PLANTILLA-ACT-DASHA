@@ -17,13 +17,16 @@ window.rollDice = () => {
   roll = Math.floor(Math.random()*5+1);
   //
   console.log(currentPlayer.name +", Tiraste", roll); 
-  
+
+  //
   currentPlayerTurn++;
   
   //
   if (currentPlayerTurn >= players.length) {
     currentPlayerTurn = 0;
   }
+  
+  
 drawBoard();
 };
 
