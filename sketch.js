@@ -18,7 +18,12 @@ window.rollDice = () => {
   //
   console.log(currentPlayer.name +", Tiraste", roll); 
   
+  currentPlayerTurn++;
   
+  //
+  if (currentPlayerTurn >= players.length) {
+    currentPlayerTurn = 0;
+  }
 drawBoard();
 };
 
